@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/Gilroy-ExtraBold.otf">
     <link rel="stylesheet" href="fonts/Gilroy-Light.otf">
     <link rel="stylesheet" href="fonts/TTNorms-Medium.otf">
@@ -51,7 +51,7 @@
             </div>
         </section>
 
-        <section class="section_about">
+        <section class="section_about" id="about">
 
             <div class="section_about__info">
 
@@ -85,11 +85,11 @@
 
         </section>
 
-        <section class="banner_specialists">
+        <section class="banner_specialists" id="specialists">
             <p class="banner_specialists__title">К каждому питомцу индивидуальный подход
                 и профессиональное лечение.</p>
             <img src="Figma/Website layout/media/brown_dog.png" alt="Коричневая собака" class="banner_specialists__dog">
-            <div class="banner_main__bubbles">
+            <div class="banner_specialists__bubbles">
                 <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 3.png" alt="Декоративная фигура" class="bubble b1">
                 <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 4.png" alt="Декоративная фигура" class="bubble b2">
                 <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 5.png" alt="Декоративная фигура" class="bubble b3">
@@ -101,9 +101,113 @@
             </div>
         </section>
 
+        <section class="section_specialists">
+            <p class="section_specialists__title">Наши специалисты</p>
+
+            <div class="section_specialists_list">
+
+                <div class="section_specialists__doctor d1">
+                    <img src="Figma/Website layout/media/doctor 1.jpg" alt="Доктор">
+                    <div class="section_specialists__doctor_info_card">
+
+                        <div class="doctor_info">
+                            <p class="name">Майкл Дженкинс</p>
+                            <p class="job">Ветеринарный терапевт</p>
+                            <p class="experience">Стаж: 12 лет</p>
+                        </div>
+
+                        <div class="section_specialists__doctor_buttons">
+                            
+                            <a href="services.html" role="button" class="button__booking">Записаться</a>
+                            <a href="about_doctor.html" role="button" class="button__about">?</a>
+                            <label for="favorite"><img src="Figma/Website layout/UI Elements/heart 2.png" alt="Сердечко"></label>
+                            <input type="radio" id="favorite">
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="about_doctor.html" role="button" class="button__services">Все услуги</a>
+
+        </section>
+
+        <section class="banner_recomendations" id="banner_recomendations">
+            <p class="banner_recomendations__title">Заботьтесь о своем питомце и дома
+                Ваша забота важна для его здоровья!</p>
+            <img src="Figma/Website layout/media/white_cat.png" alt="Белые кот" class="banner_recomendations__cat">
+            <div class="banner_recomendations__bubbles">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 3.png" alt="Декоративная фигура" class="bubble b1">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 4.png" alt="Декоративная фигура" class="bubble b2">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 5.png" alt="Декоративная фигура" class="bubble b3">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 6.png" alt="Декоративная фигура" class="bubble b4">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 7.png" alt="Декоративная фигура" class="bubble b5">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 8.png" alt="Декоративная фигура" class="bubble b6">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 9.png" alt="Декоративная фигура" class="bubble b7">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 9.png" alt="Декоративная фигура" class="bubble b8">
+            </div>
+        </section>
+
+        <section class="recomendations" id="recomendations">
+            <p class="recomendations__title">Рекомендации</p>
+            
+            <div class="recomendations__list">
+
+                <div class="recomendations__tip t1">
+                    <div class="list_mark"></div>
+                    <p class="tip_title">Регулярные прогулки</p>
+                    <p class="tip_text">Убедитесь, что ваш питомец получает достаточно физической активности и почаще гуляйте с ним</p>
+                </div>
+
+            </div>
+
+            <p class="recomendations__info">Эти рекомендации помогут обеспечить Вашему питомцу здоровую и счастливую жизнь!</p>
+
+        </section>
+
     </main>
 
     <footer>
+        
+        <div class="contacts" id="contacts">
+            <p class="contacts__title">Контакты</p>
+            <div class="contacts__info">
+                <div class="contacts__location">
+                    <img src="Figma/Website layout/UI Elements/location.png" alt="Метка локации">
+                    <p>ул. Зоологическая, 15, г. Москва, Россия</p>
+                </div>
+                <div class="contacts__telephone">
+                    <img src="Figma/Website layout/UI Elements/phone.png" alt="Смартфон">
+                    <p>+7 (495) 123-45-67</p>
+                </div>
+                <div class="contacts__email">
+                    <img src="Figma/Website layout/UI Elements/mail.png" alt="Почтовое письмо">
+                    <p>petcare@mail.ru</p>
+                </div>
+                <div class="contacts__time">
+                    <img src="Figma/Website layout/UI Elements/24 white.png.png" alt="24 часа">
+                    <p>Круглосуточно, без выходных</p>
+                </div>
+            </div>
+            <div class="contacts__links">
+                <a href="t.me/ia_panorama_mospolytech" class="contacts__telegram"><img src="Figma/Website layout/UI Elements/telegram.png" alt="Логотип телеграм"></a>
+                <a href="https://vk.com/kuratortv" class="contacts__vk"><img src="Figma/Website layout/UI Elements/vk.png" alt="Логотип ВК"></a>
+                <a href="mail.ru" class="contacts__mail"><img src="Figma/Website layout/UI Elements/mail.png" alt="Логотип почты"></a>
+                <a href="tel:+79186579733" class="contacts_phone"><img src="Figma/Website layout/UI Elements/phone.png" alt="Логотип телефона"></a>
+            </div>
+        </div>
+
+        <div class="subscribe">
+            <p class="subscribe__title">Подписка на новости</p>
+            <form action="">
+                <input type="email" placeholder="youremail@mail.ru" class="subscribe__input">
+                <button type="submit" class="button__subscribe">Подписаться</button>
+            </form>
+        </div>
+
+        <p class="site_info">© 2025 PetCare</p>
 
     </footer>
 
