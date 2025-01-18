@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="fonts/Gilroy-ExtraBold.otf">
-    <link rel="stylesheet" href="fonts/Gilroy-Light.otf">
-    <link rel="stylesheet" href="fonts/TTNorms-Medium.otf">
+    <link rel="stylesheet" href="css/index.css">
     <title>PetCare</title>
     <link rel="icon" href="Figma/Website layout/UI Elements/logo.svg" type="imgage/svg">
 </head>
@@ -17,15 +16,15 @@
         <nav class="menu">
 
             <div class="menu__logo">
-                <a href=""><img src="Figma/Website layout/UI Elements/logo.svg" alt="Логотип"></a>
+                <a href="" class="menu__logotype" aria-label="Логотип"></a>
                 <a href="" class="menu__title">Pet<span class="menu__title--color">Care</span></a>
             </div>
 
-            <div class="sections">
+            <div class="menu__sections">
                 <a href="services.html">Услуги</a>
                 <a href="#recomendations">Рекомендации</a>
                 <a href="#contacts">Контакты</a>
-                <a href="#sign_in"><img src="Figma/Website layout/UI Elements/sign in.svg" alt="Вход"></a>
+                <a href="#sign_in" class="menu__sign_up" aria-label="Профиль"></a>
             </div>
 
         </nav>
@@ -36,18 +35,17 @@
 
         <section id="banner_main" class="banner_main">
             <div class="banner_main__title">
-                <p class="banner_main__title_main">PetCare</p>
-                <p class="banner_main__slogan">Лучшая ветклиника в мире</p>
+                <p class="banner_main__title_text">PetCare</p>
+                <p class="banner_main__slogan">Лучшая ветклиника в мир<span class="banner_main__slogan--letter">е</span></p>
             </div>
             <div class="banner_main__bubbles">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 3.png" alt="Декоративная фигура" class="bubble b1">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 4.png" alt="Декоративная фигура" class="bubble b2">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 5.png" alt="Декоративная фигура" class="bubble b3">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 6.png" alt="Декоративная фигура" class="bubble b4">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 7.png" alt="Декоративная фигура" class="bubble b5">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 8.png" alt="Декоративная фигура" class="bubble b6">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 9.png" alt="Декоративная фигура" class="bubble b7">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 9.png" alt="Декоративная фигура" class="bubble b8">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 1.svg" alt="Декоративная фигура" class="bubble b1">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 2.svg" alt="Декоративная фигура" class="bubble b2">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 3.svg" alt="Декоративная фигура" class="bubble b3">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 4.svg" alt="Декоративная фигура" class="bubble b4">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 5.svg" alt="Декоративная фигура" class="bubble b5">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 6.svg" alt="Декоративная фигура" class="bubble b6">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 7.svg" alt="Декоративная фигура" class="bubble b7">
             </div>
         </section>
 
@@ -56,23 +54,23 @@
             <div class="section_about__info">
 
                 <div class="section_about__slogan">
-                    <p>PetCare</p>
-                    <p>Место, где забота о здоровье ваших питомцев стоит на первом месте</p>
+                    <p class="section_about__title">PetCare</p>
+                    <p class="section_about__text">Место, где забота о здоровье ваших питомцев стоит на первом месте</p>
                 </div>
                 
                 <div class="section_about__facts">
 
-                    <div class="section_about__time">
+                    <div class="section_about__fact section_about__time">
                         <img src="Figma/Website layout/UI Elements/24.png" alt="24 часа">
                         <p>Работаем круглосуточно без выходных</p>
                     </div>
 
-                    <div class="section_about__hirurg">
+                    <div class="section_about__fact section_about__hirurg">
                         <img src="Figma/Website layout/UI Elements/hirurg.png" alt="Хирургический стол">
                         <p>Импортные хирургические столы</p>
                     </div>
 
-                    <div class="section_about__laboratory">
+                    <div class="section_about__fact section_about__laboratory">
                         <img src="Figma/Website layout/UI Elements/laboratory.png" alt="Лаборатория">
                         <p>Собственная лаборатория для анализов</p>
                     </div>
@@ -81,7 +79,7 @@
 
             </div>
 
-            <img src="Figma/Website layout/media/first_cat.jpg" alt="Изображение с котом" class="section_about__image">
+            <div class="section_about__image" aria-label="Фото кошки"></div>
 
         </section>
 
@@ -90,14 +88,13 @@
                 и профессиональное лечение.</p>
             <img src="Figma/Website layout/media/brown_dog.png" alt="Коричневая собака" class="banner_specialists__dog">
             <div class="banner_specialists__bubbles">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 3.png" alt="Декоративная фигура" class="bubble b1">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 4.png" alt="Декоративная фигура" class="bubble b2">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 5.png" alt="Декоративная фигура" class="bubble b3">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 6.png" alt="Декоративная фигура" class="bubble b4">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 7.png" alt="Декоративная фигура" class="bubble b5">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 8.png" alt="Декоративная фигура" class="bubble b6">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 9.png" alt="Декоративная фигура" class="bubble b7">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 9.png" alt="Декоративная фигура" class="bubble b8">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 3.svg" alt="Декоративная фигура" class="bubble b1">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 4.svg" alt="Декоративная фигура" class="bubble b2">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 5.svg" alt="Декоративная фигура" class="bubble b3">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 6.svg" alt="Декоративная фигура" class="bubble b4">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 7.svg" alt="Декоративная фигура" class="bubble b5">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 8.svg" alt="Декоративная фигура" class="bubble b6">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 9.svg" alt="Декоративная фигура" class="bubble b7">
             </div>
         </section>
 
@@ -107,7 +104,7 @@
             <div class="section_specialists_list">
 
                 <div class="section_specialists__doctor d1">
-                    <img src="Figma/Website layout/media/doctor 1.jpg" alt="Доктор">
+                    <!-- <img src="Figma/Website layout/media/doctor 1.jpg" alt="Доктор"> -->
                     <div class="section_specialists__doctor_info_card">
 
                         <div class="doctor_info">
@@ -139,14 +136,13 @@
                 Ваша забота важна для его здоровья!</p>
             <img src="Figma/Website layout/media/white_cat.png" alt="Белые кот" class="banner_recomendations__cat">
             <div class="banner_recomendations__bubbles">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 3.png" alt="Декоративная фигура" class="bubble b1">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 4.png" alt="Декоративная фигура" class="bubble b2">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 5.png" alt="Декоративная фигура" class="bubble b3">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 6.png" alt="Декоративная фигура" class="bubble b4">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 7.png" alt="Декоративная фигура" class="bubble b5">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 8.png" alt="Декоративная фигура" class="bubble b6">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 9.png" alt="Декоративная фигура" class="bubble b7">
-                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 9.png" alt="Декоративная фигура" class="bubble b8">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 3.svg" alt="Декоративная фигура" class="bubble b1">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 4.svg" alt="Декоративная фигура" class="bubble b2">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 5.svg" alt="Декоративная фигура" class="bubble b3">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 6.svg" alt="Декоративная фигура" class="bubble b4">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 7.svg" alt="Декоративная фигура" class="bubble b5">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 8.svg" alt="Декоративная фигура" class="bubble b6">
+                <img src="Figma/Website layout/UI Elements/Bubbles/Ellipse 9.svg" alt="Декоративная фигура" class="bubble b7">
             </div>
         </section>
 
@@ -170,6 +166,8 @@
     </main>
 
     <footer>
+
+        <!-- <video autoplay loop muted src="Figma/Website layout/media/walk_cat.mp4"></video> -->
         
         <div class="contacts" id="contacts">
             <p class="contacts__title">Контакты</p>
