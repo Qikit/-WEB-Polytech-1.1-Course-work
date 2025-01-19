@@ -330,3 +330,330 @@ nav{
     0% {}
     100% {top: -5%; left: 0%; transform: scale(1.5) rotate(170deg);}
 }
+
+
+/* Раздел специалисты */
+.section_specialists{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px
+}
+
+.section_specialists__title{
+    text-align: center;
+    color: var(--peach-color);
+    font-family: 'TT Norms extrabold';
+    font-size: 70px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.section_specialists__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+}
+
+.section_specialists__doctor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    width: 300px;
+    height: 400px;
+    aspect-ratio: 6/8;
+    padding: 10px;
+
+    background-position: top;
+    background-size: cover;
+    background-clip: inherit;
+    border-radius: 35px;
+    transition: all 0.5s;
+}
+
+
+.section_specialists__doctor:hover{
+    transform: scale(1.1);
+}
+
+.section_specialists__doctor_info_card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    gap: 10px
+}
+
+.section_specialists__doctor_info{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-family: 'TT Norms regular';
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.section_specialists__doctor .name{
+    font-family: 'TT Norms extrabold';
+}
+
+.section_specialists__doctor_buttons{
+    display: flex;
+    margin-top: auto;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button__booking{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    min-height: 25px;
+    width: 100%;
+
+    background-color: var(--peach-color);
+    border-radius: 1000px;
+    color: white;
+    font-family: 'TT Norms extrabold';
+    font-weight: 800;
+}
+
+.button__about{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    min-height: 25px;
+    aspect-ratio: 1/1;
+
+    background-color: var(--lavender-color);
+    border-radius: 1000px;
+    color: white;
+    font-family: 'TT Norms extrabold';
+    font-weight: 800;
+}
+
+.button_favorite__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    min-height: 25px;
+
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border-radius: 1000px;
+}
+
+.button_favorite__button img{
+    height: 15px;
+    width: 15px;
+}
+
+.button_favorite input{
+    display: none;
+}
+
+.button_favorite input:checked + .button_favorite__button{
+    background-color: var(--secondary-color);
+}
+
+
+.button__services{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--peach-color);
+    width: 150px;
+    min-width: min-content;
+    height: 40px;
+    color: white;
+    font-family: 'TT Norms extrabold';
+    font-size: 1em;
+    border-radius: 1000px;
+}
+
+
+
+/* Баннер рекомендации */
+
+.banner_recomendations{
+    display: flex;
+    background-color: var(--lavender-color);
+    height: 600px;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner_recomendations__title{
+    display: flex;
+    width: 35%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'TT Norms extrabold';
+    line-height: 50px;
+    word-wrap: break-word;
+    z-index: 3;
+}
+
+.banner_recomendations img{
+    position: absolute;
+    transform: scale(0.5);
+    right: -10%;
+    top: -50%;
+    z-index: 2;
+}
+
+.banner_recomendations__bubbles{
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.banner_recomendations
+.bubble{
+    position: absolute;
+}
+
+.banner_recomendations .b1{top: 80%; left: 70%; transform: scale(1.5) rotate(0deg); animation: bubble1 8s  ease infinite alternate-reverse;}
+.banner_recomendations .b2{ top: 50%; left: 3%; transform: scale(1) rotate(0deg); animation: bubble2 8s  ease infinite alternate;}
+.banner_recomendations .b3{top: 90%; left: 25%; transform: scale(1) rotate(15deg); animation: bubble3 8s  ease infinite alternate-reverse;}
+.banner_recomendations .b4{z-index: 1; top: 60%; left: 90%; transform: scale(0.7) rotate(60deg); animation: bubble4 8s  ease infinite alternate;}
+.banner_recomendations .b5{top: -5%; left: 50%; transform: scale(1) rotate(180deg); animation: bubble5 8s  ease infinite alternate;}
+.banner_recomendations .b6{top: 1%; left: 95%; transform: scale(1.5) rotate(60deg); animation: bubble6 8s  ease infinite alternate;}
+.banner_recomendations .b7{top: -10%; left: -3%; transform: scale(1.5) rotate(180deg); animation: bubble7 8s  ease infinite alternate;}
+
+@keyframes bubble1 {
+    0% {}
+    100% {top: 75%; left: 75%; transform: scale(1.5) rotate(10deg);}
+}
+@keyframes bubble2 {
+    0% {}
+    100% {top: 55%; left: 7%; transform: scale(1) rotate(-10deg);}
+}
+@keyframes bubble3 {
+    0% {}
+    100% {top: 85%; left: 20%; transform: scale(1) rotate(30deg);}
+}
+@keyframes bubble4 {
+    0% {}
+    100% {top: 55%; left: 85%; transform: scale(0.7) rotate(70deg);}
+}
+@keyframes bubble5 {
+    0% {}
+    100% {top: 0%; left: 45%; transform: scale(1) rotate(170deg);}
+}
+@keyframes bubble6 {
+    0% {}
+    100% {top: 5%; left: 90%; transform: scale(1.5) rotate(70deg);}
+}
+@keyframes bubble7 {
+    0% {}
+    100% {top: -5%; left: 0%; transform: scale(1.5) rotate(170deg);}
+}
+
+
+
+/* Список рекомендаций */
+
+.recomendations{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.recomendations__title{
+    text-align: center;
+    color: var(--lavender-color);
+    font-family: 'TT Norms extrabold';
+    font-size: 70px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.recomendations__list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.recomendations__tip{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 15px;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+
+.recomendations__tip:hover{
+    transform: scale(1.1);
+}
+
+.tip_text{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size: 25px;
+}
+
+.list_mark{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: var(--lavender-color);
+    border-radius: 1000px;
+}
+
+.tip_title{
+    color: var(--primary-color);
+    font-family: 'TT Norms extrabold';
+    font-weight: 800;
+    word-wrap: break-word
+}
+
+.tip_text{
+    color: var(--primary-color);
+    font-family: 'TT Norms regular';
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+
+.recomendations__info{
+    color: var(--primary-color);
+    font-family: 'TT Norms regular';
+    font-weight: 400;
+    font-size: 25px;
+    word-wrap: break-word
+}
