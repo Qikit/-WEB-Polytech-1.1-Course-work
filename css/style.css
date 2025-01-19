@@ -34,6 +34,22 @@ body{
     --lavender-color: #BB8FE8;
 }
 
+::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+    display: block;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 7px;
+    padding: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
 a{
     text-decoration: none;
 }
@@ -41,12 +57,4 @@ a{
 p{
     padding: 0;
     margin: 0;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    justify-content: center;
-    align-items: center;
 }
