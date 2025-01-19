@@ -97,7 +97,7 @@ nav{
 .banner_main__title_text{
     color: white;
     font-size: 110px;
-    font-family: TT Norms;
+    font-family: 'TT Norms extrabold';
     font-weight: 800;
     text-transform: uppercase;
     line-height: 100px;
@@ -107,7 +107,7 @@ nav{
 .banner_main__slogan{
     color: white;
     font-size: 19px;
-    font-family: TT Norms;
+    font-family: 'TT Norms regular';
     font-weight: 700;
     text-transform: uppercase;
     line-height: 38px;
@@ -213,7 +213,7 @@ nav{
 }
 
 .section_about__title{
-    font-family: TT Norms;
+    font-family: 'TT Norms extrabold';
     font-weight: 900;
     font-size: 70px;
     color: var(--secondary-color);
@@ -222,7 +222,7 @@ nav{
 
 .section_about__text{
     font-size: 30px;
-    font-family: TT Norms;
+    font-family: 'TT Norms medium';
     font-weight: 500;
     line-height: 25px;
     word-wrap: break-word;
@@ -266,8 +266,7 @@ nav{
     text-align: center;
     color: white;
     font-size: 50px;
-    font-family: TT Norms;
-    font-weight: 700;
+    font-family: 'TT Norms extrabold';
     line-height: 50px;
     word-wrap: break-word;
     z-index: 3;
