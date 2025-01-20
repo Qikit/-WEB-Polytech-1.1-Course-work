@@ -957,11 +957,12 @@ footer video{
         align-items: center;
         color: white;
         z-index: 1;
+        padding: 10px;
     }
 
     .banner_main__title_text{
         color: white;
-        font-size: 20vw;
+        font-size: 10vw;
         font-family: 'TT Norms extrabold';
         font-weight: 800;
         text-transform: uppercase;
@@ -972,18 +973,14 @@ footer video{
 
     .banner_main__slogan{
         color: white;
-        font-size: 5vw;
+        font-size: 3vw;
         font-family: 'TT Norms regular';
         font-weight: 700;
         text-transform: uppercase;
         line-height: normal;
-        letter-spacing: 9px;
+        letter-spacing: 5px;
         word-wrap: break-word;
         text-align: center;
-    }
-
-    .banner_main__slogan--letter{
-        letter-spacing: 0;
     }
 
     .banner_main__bubbles{
@@ -1000,34 +997,39 @@ footer video{
 
     .section_about{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-self: center;
         justify-content: center;
         align-items: center;
         width: 80%;
-        height: 500px;
+        height: auto;
+        max-height: max-content;
+
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
         border-radius: 50px;
-        padding: 50px;
+        padding: 5vw;
+        gap: 5vw;
     }
 
     .section_about__image{
         display: flex;
-        margin-left: auto;
+        justify-self: center;
+        min-height: 50vw;
         height: 100%;
-        width: 50%;
+        width: 100%;
 
         background-image: url("../Figma/Website layout/media/first_cat.jpg");
         background-size: cover;
-        background-position: 100%;
+        background-position: center;
         border-radius: 50px;
     }
 
     .section_about__info{
         display: flex;
         flex-direction: column;
-        width: 35%;
+        width: 100%;
         height: 100%;
+        gap: 5vw;
     }
 
     .section_about__slogan{
@@ -1038,16 +1040,16 @@ footer video{
     .section_about__title{
         font-family: 'TT Norms extrabold';
         font-weight: 900;
-        font-size: 70px;
+        font-size: 15vw;
         color: var(--secondary-color);
         text-transform: uppercase;
     }
 
     .section_about__text{
-        font-size: 30px;
+        font-size: 5vw;
         font-family: 'TT Norms medium';
         font-weight: 500;
-        line-height: 25px;
+        line-height: normal;
         word-wrap: break-word;
         color: var(--primary-color);
     }
@@ -1055,9 +1057,19 @@ footer video{
     .section_about__facts{
         display: flex;
         flex-direction: row;
-        margin-top: auto;
+        margin-top: 0;
         justify-content: start;
         align-items: center;
+    }
+
+    @media (max-width: 450px) {
+        .section_about__facts{
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+            justify-content: start;
+            align-items: center;
+        }
     }
 
     .section_about__fact{
