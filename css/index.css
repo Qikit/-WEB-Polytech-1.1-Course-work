@@ -1117,8 +1117,6 @@ footer video{
         font-size: 5vw;
         font-family: 'TT Norms extrabold';
         line-height: normal;
-        word-wrap: break-word;
-        z-index: 3;
     }
 
     .banner_specialists img{
@@ -1146,7 +1144,7 @@ footer video{
     .section_specialists{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%;
         justify-content: center;
         align-items: center;
         gap: 50px
@@ -1165,6 +1163,7 @@ footer video{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         width: 100%;
         gap: 50px;
     }
@@ -1174,9 +1173,10 @@ footer video{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: auto;
-        width: 300px;
-        height: 400px;
+        height: auto;
+        width: 50vw;
+        min-width: 300px;
+        min-height: 400px;
         aspect-ratio: 6/8;
         padding: 10px;
 
@@ -1189,7 +1189,7 @@ footer video{
 
 
     .section_specialists__doctor:hover{
-        transform: scale(1.1);
+        transform: unset;
     }
 
     .section_specialists__doctor_info_card{
@@ -1302,7 +1302,8 @@ footer video{
     .banner_recomendations{
         display: flex;
         background-color: var(--lavender-color);
-        height: 600px;
+        height: 30vh;
+        min-height: max-content;
         width: 100%;
         position: relative;
         justify-content: center;
@@ -1312,14 +1313,12 @@ footer video{
 
     .banner_recomendations__title{
         display: flex;
-        width: 35%;
+        width: 80%;
         text-align: center;
         color: white;
-        font-size: 50px;
+        font-size: 5vw;
         font-family: 'TT Norms extrabold';
-        line-height: 50px;
-        word-wrap: break-word;
-        z-index: 3;
+        line-height: normal;
     }
 
     .banner_recomendations img{
@@ -1331,55 +1330,12 @@ footer video{
     }
 
     .banner_recomendations__bubbles{
-        display: flex;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        overflow: hidden;
+        display: none;
     }
 
     .banner_recomendations
     .bubble{
-        position: absolute;
-    }
-
-    .banner_recomendations .b1{top: 80%; left: 70%; transform: scale(1.5) rotate(0deg); animation: bubble1 8s  ease infinite alternate-reverse;}
-    .banner_recomendations .b2{ top: 50%; left: 3%; transform: scale(1) rotate(0deg); animation: bubble2 8s  ease infinite alternate;}
-    .banner_recomendations .b3{top: 90%; left: 25%; transform: scale(1) rotate(15deg); animation: bubble3 8s  ease infinite alternate-reverse;}
-    .banner_recomendations .b4{z-index: 1; top: 60%; left: 90%; transform: scale(0.7) rotate(60deg); animation: bubble4 8s  ease infinite alternate;}
-    .banner_recomendations .b5{top: -5%; left: 50%; transform: scale(1) rotate(180deg); animation: bubble5 8s  ease infinite alternate;}
-    .banner_recomendations .b6{top: 1%; left: 95%; transform: scale(1.5) rotate(60deg); animation: bubble6 8s  ease infinite alternate;}
-    .banner_recomendations .b7{top: -10%; left: -3%; transform: scale(1.5) rotate(180deg); animation: bubble7 8s  ease infinite alternate;}
-
-    @keyframes bubble1 {
-        0% {}
-        100% {top: 75%; left: 75%; transform: scale(1.5) rotate(10deg);}
-    }
-    @keyframes bubble2 {
-        0% {}
-        100% {top: 55%; left: 7%; transform: scale(1) rotate(-10deg);}
-    }
-    @keyframes bubble3 {
-        0% {}
-        100% {top: 85%; left: 20%; transform: scale(1) rotate(30deg);}
-    }
-    @keyframes bubble4 {
-        0% {}
-        100% {top: 55%; left: 85%; transform: scale(0.7) rotate(70deg);}
-    }
-    @keyframes bubble5 {
-        0% {}
-        100% {top: 0%; left: 45%; transform: scale(1) rotate(170deg);}
-    }
-    @keyframes bubble6 {
-        0% {}
-        100% {top: 5%; left: 90%; transform: scale(1.5) rotate(70deg);}
-    }
-    @keyframes bubble7 {
-        0% {}
-        100% {top: -5%; left: 0%; transform: scale(1.5) rotate(170deg);}
+        display: none;
     }
 
 
@@ -1399,7 +1355,7 @@ footer video{
         text-align: center;
         color: var(--lavender-color);
         font-family: 'TT Norms extrabold';
-        font-size: 70px;
+        font-size: 10vw;
         text-transform: uppercase;
         word-wrap: break-word;
     }
@@ -1407,7 +1363,7 @@ footer video{
     .recomendations__list{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 80%;
         justify-content: center;
         align-items: center;
         gap: 20px;
@@ -1449,6 +1405,7 @@ footer video{
         color: var(--primary-color);
         font-family: 'TT Norms extrabold';
         font-weight: 800;
+        font-size: 5vw;
         word-wrap: break-word
     }
 
@@ -1456,6 +1413,7 @@ footer video{
         color: var(--primary-color);
         font-family: 'TT Norms regular';
         font-weight: 400;
+        font-size: 5vw;
         word-wrap: break-word
     }
 
@@ -1464,7 +1422,8 @@ footer video{
         color: var(--primary-color);
         font-family: 'TT Norms regular';
         font-weight: 400;
-        font-size: 25px;
+        font-size: 5vw;
+        text-align: center;
         word-wrap: break-word
     }
 
@@ -1477,9 +1436,9 @@ footer video{
         position: relative;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        padding: 50px;
-        padding-left: 150px;
-        padding-right: 150px;
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
         min-height: 600px;
         color: white;
     }
@@ -1491,7 +1450,7 @@ footer video{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: top;
+        object-position: center;
         z-index: -1;
         transform: translate(-50%, -50%);
     }
@@ -1501,11 +1460,11 @@ footer video{
         flex-direction: column;
         width: 100%;
         grid-column: 1;
-        gap: 20px;
+        gap: 10px;
     }
 
     .contacts__title{
-        font-size: 35px;
+        font-size: 5vw;
         font-family: 'TT Norms extrabold';
         font-weight: 800;
         word-wrap: break-word
@@ -1526,11 +1485,11 @@ footer video{
 
     .contacts__contact img{
         height: auto;
-        width: 30px;
+        width: 5vw;
     }
 
     .contacts__contact p{
-        font-size: 1em;
+        font-size: 2vw;
         font-family: 'TT Norms regular';
         font-weight: 400;
         word-wrap: break-word
@@ -1539,12 +1498,12 @@ footer video{
     .contacts__links{
         display: flex;
         flex-direction: row;
-        gap: 20px
+        gap: 1vw
     }
 
     .contacts__link{
         height: auto;
-        width: 30px;
+        width: 5vw;
         transition: all 0.5s;
     }
 
@@ -1552,18 +1511,23 @@ footer video{
         transform: scale(1.1);
     }
 
+    .contacts__link img{
+        height: auto;
+        width: 5vw;
+    }
+
     .subscribe{
         display: flex;
         justify-self: flex-end;
         align-items: flex-end;
         flex-direction: column;
-        width: 70%;
+        width: 100%;
         grid-column: 3;
         gap: 10px;
     }
 
     .subscribe__title{
-        font-size: 35px;
+        font-size: 2vw;
         font-family: 'TT Norms extrabold';
         font-weight: 800;
         word-wrap: break-word
@@ -1584,7 +1548,7 @@ footer video{
         height: auto;
         padding: 10px;
 
-        font-size: 20px;
+        font-size: 2vw;
         font-family: 'TT Norms regular';
         font-weight: 300;
         color: var(--primary-color);
@@ -1604,7 +1568,7 @@ footer video{
         height: auto;
         padding: 10px;
 
-        font-size: 20px;
+        font-size: 2vw;
         font-family: 'TT Norms extrabold';
         font-weight: 800;
         color: var(--primary-color);
@@ -1621,6 +1585,8 @@ footer video{
         justify-self: center;
         align-self: flex-end;
         grid-column: 2;
+        font-size: 1vw;
+        width: 100%;
     }
 
 }
