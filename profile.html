@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>PetCare - регистрация</title>
+</head>
+<body>
+    
+    <header>
+
+        <nav class="menu">
+
+            <div class="menu__logo">
+                <a href="index.html" class="menu__logotype" aria-label="Логотип"></a>
+                <a href="index.html" class="menu__title">Pet<span class="menu__title--color">Care</span></a>
+            </div>
+
+            <div class="menu__sections">
+                <a href="index.html">Главная</a>
+                <a href="index.html#recomendations">Рекомендации</a>
+                <a href="#contacts">Контакты</a>
+                <a href="" class="menu__sign_up" aria-label="Профиль"></a>
+                <a href="" class="menu__sign_up--phone">Профиль</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="registration">
+
+            <fieldset class="personal-info">
+                <legend>Регистрация</legend>
+                <div class="register-container">
+                    <div class="input-container">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" id="name" placeholder="Как звать" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="dateOfBirth">Дата рождения</label>
+                        <input type="date" name="dateOfBirth" id="dateOfBirth">
+                    </div>
+                    <div class="input-container">
+                        <label for="gender">Пол</label>
+                        <div class="input-container gender">
+                            <label for="gender-female">Ж<input type="radio" name="gender" id="gender-female" value="female"></label>
+                            <label for="gender-male">М<input type="radio" name="gender" id="gender-male" value="male"></label>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="password">Пароль</label>
+                        <input type="password" name="password" id="password" placeholder="@#&*#@%^!" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="password">Повторите пароль</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit" action="index.html">Зарегистрироваться</button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <video autoplay loop muted src="Figma/Website layout/media/walk_cat.mp4"></video>
+        
+        <div class="contacts" id="contacts">
+            <p class="contacts__title">Контакты</p>
+            <div class="contacts__info">
+                <div class="contacts__contact contacts__location">
+                    <img src="Figma/Website layout/UI Elements/location.png" alt="Метка локации">
+                    <p>ул. Зоологическая, 15, г. Москва, Россия</p>
+                </div>
+                <div class="contacts__contact contacts__telephone">
+                    <img src="Figma/Website layout/UI Elements/phone.png" alt="Смартфон">
+                    <p>+7 (495) 123-45-67</p>
+                </div>
+                <div class="contacts__contact contacts__email">
+                    <img src="Figma/Website layout/UI Elements/mail.png" alt="Почтовое письмо">
+                    <p>petcare@mail.ru</p>
+                </div>
+                <div class="contacts__contact contacts__time">
+                    <img src="Figma/Website layout/UI Elements/24 white.png" alt="24 часа">
+                    <p>Круглосуточно, без выходных</p>
+                </div>
+            </div>
+            <div class="contacts__links">
+                <a href="t.me/ia_panorama_mospolytech" class="contacts__link contacts__telegram"><img src="Figma/Website layout/UI Elements/telegram.png" alt="Логотип телеграм"></a>
+                <a href="https://vk.com/kuratortv" class="contacts__link contacts__vk"><img src="Figma/Website layout/UI Elements/vk.png" alt="Логотип ВК"></a>
+                <a href="mail.ru" class="contacts__link contacts__mail"><img src="Figma/Website layout/UI Elements/mail.svg" alt="Логотип почты"></a>
+                <a href="tel:+79186579733" class="contacts__link contacts_phone"><img src="Figma/Website layout/UI Elements/phone.png" alt="Логотип телефона"></a>
+            </div>
+        </div>
+
+        <div class="subscribe">
+            <p class="subscribe__title">Подписка на новости</p>
+            <form action="">
+                <input required type="email" placeholder="youremail@mail.ru" class="subscribe__input">
+                <button type="submit" class="button__subscribe">Подписаться</button>
+            </form>
+        </div>
+
+        <p class="site_info">© 2025 PetCare</p>
+
+    </footer>
+
+</body>
+</html>

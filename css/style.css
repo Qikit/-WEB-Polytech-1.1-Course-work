@@ -66,3 +66,529 @@ p{
     margin: 0;
     cursor: default;
 }
+
+ul, li{
+    cursor: default;
+}
+
+
+/* Шапка сайта */
+
+header{
+    display: flex;
+    position: sticky;
+    z-index: 1000;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.menu__logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu__logotype{
+    background-image: url("../Figma/Website layout/UI Elements/logo.svg");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.menu__title{
+    font-family: 'TT Norms extrabold';
+    font-size: 18pt;
+    color: var(--primary-color);
+}
+
+.menu__title--color{
+    color: var(--secondary-color);
+}
+
+.menu__sections{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu__sections a{
+    color: var(--primary-color);
+    font-size: 14;
+    font-family: 'TT Norms medium';
+    font-weight: 10;
+    transition: color 0.5s;
+}
+
+.menu__sections a:hover{
+    color: var(--secondary-color);
+}
+
+.menu__sign_up{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-image: url("../Figma/Website layout/UI Elements/sign in.svg");
+    background-size: cover;
+}
+
+.menu__sign_up:hover{
+    background-image: url("../Figma/Website layout/UI Elements/sign in pink.png");
+}
+
+.menu__sign_up--phone{
+    display: none;
+}
+
+
+
+/* Основное содержание сайта */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+
+/* Подвал сайта */
+
+footer{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    min-height: 600px;
+    color: white;
+}
+
+footer video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column: 1;
+    gap: 20px;
+}
+
+.contacts__title{
+    font-size: 35px;
+    font-family: 'TT Norms extrabold';
+    font-weight: 800;
+    word-wrap: break-word
+}
+
+.contacts__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts__contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacts__contact img{
+    height: auto;
+    width: 30px;
+}
+
+.contacts__contact p{
+    font-size: 1em;
+    font-family: 'TT Norms regular';
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.contacts__links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+.contacts__link{
+    height: auto;
+    width: 30px;
+    transition: all 0.5s;
+}
+
+.contacts__link:hover{
+    transform: scale(1.1);
+}
+
+.subscribe{
+    display: flex;
+    justify-self: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 70%;
+    grid-column: 3;
+    gap: 10px;
+}
+
+.subscribe__title{
+    font-size: 35px;
+    font-family: 'TT Norms extrabold';
+    font-weight: 800;
+    word-wrap: break-word
+}
+
+.subscribe form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.subscribe__input{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+    font-size: 20px;
+    font-family: 'TT Norms regular';
+    font-weight: 300;
+    color: var(--primary-color);
+
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.button__subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+    font-size: 20px;
+    font-family: 'TT Norms extrabold';
+    font-weight: 800;
+    color: var(--primary-color);
+    
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.site_info{
+    display: flex;
+    justify-self: center;
+    align-self: flex-end;
+    grid-column: 2;
+}
+
+
+
+@media (max-width: 700px){
+    /* Шапка сайта */
+
+    header{
+        display: flex;
+        position: sticky;
+        z-index: 1000;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        height: auto;
+        max-height: max-content;
+        width: 100%;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        height: auto;
+        max-height: max-content;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu__logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu__logotype{
+        background-image: url("../Figma/Website layout/UI Elements/logo.svg");
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu__title{
+        font-family: 'TT Norms extrabold';
+        text-transform: scale(0.1);
+        color: var(--primary-color);
+    }
+
+    .menu__title--color{
+        color: var(--secondary-color);
+    }
+
+
+    .menu__sections{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: auto;
+        align-items: center;
+        gap: 5px;
+        height: auto;
+        max-height: max-content;
+    }
+
+    .menu__sections a{
+        color: var(--primary-color);
+        font-size: 14;
+        font-family: 'TT Norms extrabold';
+        font-weight: 10;
+        transition: color 0.5s;
+    }
+
+    .menu__sections a:hover{
+        color: var(--secondary-color);
+    }
+
+    .menu__sign_up{
+        display: none;
+        height: 20px;
+        width: 20px;
+    }
+
+    .menu__sign_up--phone{
+        display: flex;
+    }
+
+
+
+    /* Основное содержание сайта */
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    /* Подвал сайта */
+
+    footer{
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        min-height: 600px;
+        color: white;
+    }
+
+    footer video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        grid-column: 1;
+        gap: 10px;
+    }
+
+    .contacts__title{
+        font-size: 5vw;
+        font-family: 'TT Norms extrabold';
+        font-weight: 800;
+        word-wrap: break-word
+    }
+
+    .contacts__info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contacts__contact{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contacts__contact img{
+        height: auto;
+        width: 5vw;
+    }
+
+    .contacts__contact p{
+        font-size: 4vw;
+        font-family: 'TT Norms medium';
+        font-weight: 400;
+        word-wrap: break-word
+    }
+
+    .contacts__links{
+        display: flex;
+        flex-direction: row;
+        gap: 1vw
+    }
+
+    .contacts__link{
+        height: auto;
+        width: 5vw;
+        transition: all 0.5s;
+    }
+
+    .contacts__link:hover{
+        transform: scale(1.1);
+    }
+
+    .contacts__link img{
+        height: auto;
+        width: 5vw;
+    }
+
+    .subscribe{
+        display: flex;
+        justify-self: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 100%;
+        grid-column: 3;
+        gap: 10px;
+    }
+
+    .subscribe__title{
+        font-size: 5vw;
+        font-family: 'TT Norms extrabold';
+        font-weight: 800;
+        word-wrap: break-word
+    }
+
+    .subscribe form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .subscribe__input{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+
+        font-size: 2vw;
+        font-family: 'TT Norms regular';
+        font-weight: 300;
+        color: var(--primary-color);
+
+        background-color: white;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    .button__subscribe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+
+        font-size: 2vw;
+        font-family: 'TT Norms extrabold';
+        font-weight: 800;
+        color: var(--primary-color);
+        
+        background-color: white;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    .site_info{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        margin-top: auto;
+        grid-column: 2;
+        font-size: 5vw;
+        width: 100%;
+    }
+
+}
+
+
+
+@media (min-width: 700px) and (max-width: 1200px){
+
+    footer{
+        padding: 20px;
+    }
+    .subscribe{
+        width: 100%;
+    }
+}
