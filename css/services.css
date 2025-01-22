@@ -187,3 +187,13 @@
     border-radius: 20px;
     text-transform: uppercase;
 }
+
+@media (max-width: 700px) {
+    .bubble{
+        display: none;
+    }
+
+    .banner_services{
+        height: 20vh;
+    }
+}
