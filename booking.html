@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/profile.css">
-    <title>PetCare - регистрация</title>
+    <link rel="stylesheet" href="css/booking.css">
+    <title>PetCare - запись</title>
 </head>
 <body>
     
@@ -30,51 +30,42 @@
 
     </header>
 
-
     <main>
 
-        <section class="registration">
+        <section class="booking">
 
             <fieldset class="personal-info">
-                <legend>Регистрация</legend>
-                <div class="register-container">
+                <legend>Запись к ветеринару</legend>
+                <div class="booking-container">
                     <div class="input-container">
                         <label for="name">Имя</label>
-                        <input type="text" name="name" id="name" placeholder="Как звать" required>
+                        <input type="text" name="name" id="name" placeholder="Ваше Имя" required>
                     </div>
                     <div class="input-container">
                         <label for="name">Почта</label>
-                        <input type="email" name="name" id="name" placeholder="youremail@mail.ru" required>
+                        <input type="email" name="email" id="email" placeholder="youremail@mail.ru" required>
                     </div>
                     <div class="input-container">
-                        <label for="dateOfBirth">Дата рождения</label>
-                        <input type="date" name="dateOfBirth" id="dateOfBirth">
+                        <label for="name">Телефон</label>
+                        <input type="tel" name="tel" id="tel" placeholder="+71234567890" required>
                     </div>
                     <div class="input-container">
-                        <label for="gender">Пол</label>
-                        <div class="input-container gender">
-                            <label for="gender-female">Ж<input type="radio" name="gender" id="gender-female" value="female"></label>
-                            <label for="gender-male">М<input type="radio" name="gender" id="gender-male" value="male"></label>
+                        <label for="pet">Питомец</label>
+                        <div class="input-container pet">
+                            <label for="pet-dog">Собака<input type="radio" name="pet" id="pet-dog" value="dog"></label>
+                            <label for="pet-cat">Кошка<input type="radio" name="pet" id="pet-dog" value="dog"></label>
                         </div>
-                    </div>
-                    <div class="input-container">
-                        <label for="password">Пароль</label>
-                        <input type="password" name="password" id="password" placeholder="@#&*#@%^!" required>
-                    </div>
-                    <div class="input-container">
-                        <label for="password">Повторите пароль</label>
-                        <input type="password" name="password" id="password" required>
                     </div>
                 </div>
             </fieldset>
 
-            <button type="submit" action="index.html">Зарегистрироваться</button>
+            <button type="submit" action="index.html">Записаться</button>
 
         </section>
 
+
     </main>
-
-
+    
     <footer>
 
         <video autoplay loop muted src="Figma/Website layout/media/walk_cat.mp4"></video>
