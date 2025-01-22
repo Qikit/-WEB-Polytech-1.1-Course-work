@@ -1,0 +1,189 @@
+
+
+/* Главный баннер */
+
+.banner_services{
+    display: flex;
+    background: linear-gradient(80deg, #C19CE6 0%, #EF6DC4 100%);
+    height: 600px;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_services__title{
+    font-family: 'TT Norms extrabold';
+    font-size: 10vw;
+    color: white;
+    z-index: 1;
+}
+
+.banner_services__title_text{
+    color: white;
+    font-size: 110px;
+    font-family: 'TT Norms extrabold';
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 100px;
+    word-wrap: break-word
+}
+
+.banner_services__slogan{
+    color: white;
+    font-size: 19px;
+    font-family: 'TT Norms regular';
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 38px;
+    letter-spacing: 9px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.banner_services__slogan--letter{
+    letter-spacing: 0;
+}
+
+.banner_services__bubbles{
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.banner_services
+.bubble{
+    position: absolute;
+}
+
+.banner_services .b1{top: 80%; left: 70%; transform: scale(1.5) rotate(0deg); animation: bubble1 8s  ease infinite alternate-reverse;}
+.banner_services .b2{top: 50%; left: 3%; transform: scale(1) rotate(0deg); animation: bubble2 8s  ease infinite alternate;}
+.banner_services .b3{top: 90%; left: 20%; transform: scale(1) rotate(15deg); animation: bubble3 8s  ease infinite alternate-reverse;}
+.banner_services .b4{top: 60%; left: 90%; transform: scale(0.7) rotate(60deg); animation: bubble4 8s  ease infinite alternate;}
+.banner_services .b5{top: -5%; left: 50%; transform: scale(1) rotate(180deg); animation: bubble5 8s  ease infinite alternate;}
+.banner_services .b6{top: 1%; left: 95%; transform: scale(1.5) rotate(60deg); animation: bubble6 8s  ease infinite alternate;}
+.banner_services .b7{top: -10%; left: -3%; transform: scale(1.5) rotate(180deg); animation: bubble7 8s  ease infinite alternate;}
+
+@keyframes bubble1 {
+    0% {}
+    100% {top: 75%; left: 75%; transform: scale(1.5) rotate(10deg);}
+}
+@keyframes bubble2 {
+    0% {}
+    100% {top: 55%; left: 5%; transform: scale(1) rotate(-10deg);}
+}
+@keyframes bubble3 {
+    0% {}
+    100% {top: 85%; left: 15%; transform: scale(1) rotate(30deg);}
+}
+@keyframes bubble4 {
+    0% {}
+    100% {top: 55%; left: 85%; transform: scale(0.7) rotate(70deg);}
+}
+@keyframes bubble5 {
+    0% {}
+    100% {top: 0%; left: 45%; transform: scale(1) rotate(170deg);}
+}
+@keyframes bubble6 {
+    0% {}
+    100% {top: 5%; left: 90%; transform: scale(1.5) rotate(70deg);}
+}
+@keyframes bubble7 {
+    0% {}
+    100% {top: -5%; left: 0%; transform: scale(1.5) rotate(170deg);}
+}
+
+
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    max-height: max-content;
+    gap: 50px;
+}
+
+.services__main_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.services__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    gap: 20px
+}
+
+.services__service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+
+    font-family: 'TT Norms medium';
+    color: var(--primary-color);
+    border-radius: 40px;
+    gap: 10px;
+}
+
+.services .l1 .services__service{
+    background-color: var(--lavender-color);
+}
+
+.services .l2 .services__service{
+    background-color: #EE7180;
+}
+
+.services .l3 .services__service{
+    background-color: #E69CA5;
+}
+
+.services__service .title{
+    font-family: 'TT Norms extrabold';
+    font-size: 20pt;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.services__service .info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    background-color: white;
+    border-radius: 30px;
+}
+
+.services__booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+
+    font-family: 'TT Norms extrabold';
+    font-weight: 800;
+    color: var(--primary-color);
+    background-color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
