@@ -420,6 +420,34 @@ footer video{
     /* Подвал сайта */
 
     footer{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacts{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subscribe{
+        width: 70%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .site_info{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    /* footer{
         display: grid;
         position: relative;
         grid-template-columns: repeat(3, 1fr);
@@ -577,7 +605,7 @@ footer video{
         grid-column: 2;
         font-size: 5vw;
         width: 100%;
-    }
+    } */
 
 }
 
