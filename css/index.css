@@ -1527,7 +1527,7 @@ footer video{
     }
 
     .subscribe__title{
-        font-size: 2vw;
+        font-size: 5vw;
         font-family: 'TT Norms extrabold';
         font-weight: 800;
         word-wrap: break-word
@@ -1589,4 +1589,75 @@ footer video{
         width: 100%;
     }
 
+}
+
+@media (min-width: 700px) and (max-width: 1200px){
+    .banner_main .b2, .banner_main .b5, .banner_main .b4{
+        display: none;
+    }
+
+    .section_about{
+        flex-direction: column;
+        gap: 20px;
+        height: max-content;
+    }
+    .section_about__info{
+        width: 100%;
+        gap: 20px
+    }
+    .section_about__slogan{
+        width: 70%;
+    }
+    .section_about__facts{
+        margin-top: 0;
+    }
+    .section_about__image{
+        margin-left: 0;
+        width: 100%;
+        height: 50vh;
+    }
+
+
+    .banner_specialists__title{
+        width: 70%;
+        font-size: 5vw;
+    }
+    .banner_specialists img{
+        left: -300px;
+        top: -40%;
+        transform: scale(0.4);
+    }
+    .banner_specialists .b2, .banner_specialists .b5{
+        display: none;
+    }
+
+
+    .section_specialists__list{
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .banner_recomendations .b5{
+        display: none;
+    }
+    .banner_recomendations__title{
+        width: 60%;
+    }
+    .banner_recomendations img{
+        left: 600px;
+    }
+
+
+    .tip_text{
+        width: 90%;
+    }
+
+
+    footer{
+        padding: 20px;
+    }
+    .subscribe{
+        width: 100%;
+    }
 }
