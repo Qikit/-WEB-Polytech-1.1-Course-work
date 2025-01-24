@@ -17,6 +17,7 @@
 .banner_main__title{
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
     z-index: 1;
 }

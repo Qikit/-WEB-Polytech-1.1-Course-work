@@ -231,11 +231,11 @@ footer video{
 
 .contacts__contact img{
     height: auto;
-    width: 30px;
+    width: 35px;
 }
 
 .contacts__contact p{
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: 'TT Norms regular';
     font-weight: 400;
     word-wrap: break-word
@@ -249,7 +249,7 @@ footer video{
 
 .contacts__link{
     height: auto;
-    width: 30px;
+    width: 35px;
     transition: all 0.5s;
 }
 
@@ -326,6 +326,7 @@ footer video{
     justify-self: center;
     align-self: flex-end;
     grid-column: 2;
+    font-size: 1.5em;
 }
 
 

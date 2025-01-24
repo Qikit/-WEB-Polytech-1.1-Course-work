@@ -42,19 +42,19 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: 3px;
+    width: 10px;
     height: 5px;
     display: block;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: red;
     border-radius: 7px;
-    padding: 1px;
+    padding: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary-color);
+    background: #cc0000;
 }
 
 a{
@@ -365,7 +365,7 @@ footer video{
     }
 
     .menu__logotype{
-        background-image: url("../UI_Elements/logo.svg");
+        background-image: url("../UI_Elements/logo-dark.svg");
         background-size: cover;
         width: 40px;
         height: 40px;
@@ -374,7 +374,7 @@ footer video{
     .menu__title{
         font-family: 'TT Norms extrabold';
         text-transform: scale(0.1);
-        color: var(--primary-color);
+        color: black;
     }
 
     .menu__title--color{
@@ -394,7 +394,7 @@ footer video{
     }
 
     .menu__sections a{
-        color: var(--primary-color);
+        color: black;
         font-size: 14;
         font-family: 'TT Norms extrabold';
         font-weight: 10;

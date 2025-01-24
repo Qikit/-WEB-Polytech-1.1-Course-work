@@ -17,6 +17,7 @@
 .banner_main__title{
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
     z-index: 1;
 }
@@ -587,7 +588,7 @@
 .tip_text{
     color: black;
     font-family: 'TT Norms regular';
-    font-weight: 400;
+    font-weight: 900;
     word-wrap: break-word
 }
 
@@ -612,8 +613,6 @@
 /* Для телефона */
 /* Для телефона */
 /* Для телефона */
-
-
 
 @media (max-width: 700px){
 
@@ -881,7 +880,7 @@
     }
 
     .section_specialists__doctor_info{
-        color: var(--primary-color);
+        color: black;
         font-size: 20px;
         font-family: 'TT Norms regular';
         font-weight: 500;
@@ -1079,7 +1078,7 @@
     }
 
     .tip_title{
-        color: var(--primary-color);
+        color: black;
         font-family: 'TT Norms extrabold';
         font-weight: 800;
         font-size: 5vw;
@@ -1087,9 +1086,9 @@
     }
 
     .tip_text{
-        color: var(--primary-color);
+        color: black;
         font-family: 'TT Norms regular';
-        font-weight: 400;
+        font-weight: 900;
         font-size: 5vw;
         word-wrap: break-word
     }
@@ -1106,6 +1105,8 @@
 
 
 }
+
+
 
 @media (min-width: 700px) and (max-width: 1200px){
     .banner_main .b2, .banner_main .b5, .banner_main .b4{
