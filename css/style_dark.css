@@ -151,6 +151,10 @@ nav{
     display: none;
 }
 
+.dark_theme--phone{
+    display: none;
+}
+
 .dark_theme{
     display: flex;
     background-image: url("../UI_Elements/dark-theme.svg");
@@ -412,6 +416,14 @@ footer video{
     }
 
     .menu__sign_up--phone{
+        display: flex;
+    }
+
+    .dark_theme{
+        display: none;
+    }
+
+    .dark_theme--phone{
         display: flex;
     }
 

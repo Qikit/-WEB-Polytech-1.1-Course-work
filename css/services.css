@@ -200,7 +200,7 @@
 
 @media (max-width: 700px) {
     .banner_services__title{
-        font-size: 5vw;
+        font-size: 15vw;
     }
     .bubble{
         display: none;
