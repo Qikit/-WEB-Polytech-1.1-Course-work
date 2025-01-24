@@ -121,7 +121,7 @@
     height: 100%;
     width: 50%;
 
-    background-image: url("../Figma/Website_layout/media/first_cat.jpg");
+    background-image: url("../media/first_cat.jpg");
     background-size: cover;
     background-position: 100%;
     border-radius: 50px;
@@ -682,7 +682,7 @@
         height: 100%;
         width: 100%;
 
-        background-image: url("../Figma/Website_layout/media/first_cat.jpg");
+        background-image: url("../media/first_cat.jpg");
         background-size: cover;
         background-position: center;
         border-radius: 50px;
