@@ -101,12 +101,22 @@
 
 .services{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
     height: auto;
     max-height: max-content;
     gap: 50px;
+}
+
+.services__title{
+    text-align: center;
+    color: var(--lavender-color);
+    font-family: 'TT Norms extrabold';
+    font-size: 8vw;
+    text-transform: uppercase;
+    word-wrap: break-word;
 }
 
 .services__main_list{

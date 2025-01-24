@@ -121,7 +121,7 @@
     height: 100%;
     width: 50%;
 
-    background-image: url("../Figma/Website layout/media/first_cat.jpg");
+    background-image: url("../Figma/Website_layout/media/first_cat.jpg");
     background-size: cover;
     background-position: 100%;
     border-radius: 50px;
@@ -302,11 +302,12 @@
     background-clip: inherit;
     border-radius: 35px;
     transition: all 0.5s;
+    border: none;
 }
 
 
 .section_specialists__doctor:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .section_specialists__doctor_info_card{
@@ -681,7 +682,7 @@
         height: 100%;
         width: 100%;
 
-        background-image: url("../Figma/Website layout/media/first_cat.jpg");
+        background-image: url("../Figma/Website_layout/media/first_cat.jpg");
         background-size: cover;
         background-position: center;
         border-radius: 50px;
@@ -1088,7 +1089,7 @@
         text-align: center;
         word-wrap: break-word
     }
-    
+
 
 }
 
