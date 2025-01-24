@@ -1,0 +1,1179 @@
+
+
+
+
+/* Главный баннер */
+
+.banner_main{
+    display: flex;
+    background-color: var(--secondary-color);
+    height: 600px;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_main__title{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+}
+
+.banner_main__title_text{
+    color: white;
+    font-size: 110px;
+    font-family: 'TT Norms extrabold';
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 100px;
+    word-wrap: break-word
+}
+
+.banner_main__slogan{
+    color: white;
+    font-size: 19px;
+    font-family: 'TT Norms regular';
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 38px;
+    letter-spacing: 9px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.banner_main__slogan--letter{
+    letter-spacing: 0;
+}
+
+.banner_main__bubbles{
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.banner_main
+.bubble{
+    position: absolute;
+}
+
+.banner_main .b1{top: 80%; left: 70%; transform: scale(1.5) rotate(0deg); animation: bubble1 8s  ease infinite alternate-reverse;}
+.banner_main .b2{top: 50%; left: 3%; transform: scale(1) rotate(0deg); animation: bubble2 8s  ease infinite alternate;}
+.banner_main .b3{top: 90%; left: 20%; transform: scale(1) rotate(15deg); animation: bubble3 8s  ease infinite alternate-reverse;}
+.banner_main .b4{top: 60%; left: 90%; transform: scale(0.7) rotate(60deg); animation: bubble4 8s  ease infinite alternate;}
+.banner_main .b5{top: -5%; left: 50%; transform: scale(1) rotate(180deg); animation: bubble5 8s  ease infinite alternate;}
+.banner_main .b6{top: 1%; left: 95%; transform: scale(1.5) rotate(60deg); animation: bubble6 8s  ease infinite alternate;}
+.banner_main .b7{top: -10%; left: -3%; transform: scale(1.5) rotate(180deg); animation: bubble7 8s  ease infinite alternate;}
+
+@keyframes bubble1 {
+    0% {}
+    100% {top: 75%; left: 75%; transform: scale(1.5) rotate(10deg);}
+}
+@keyframes bubble2 {
+    0% {}
+    100% {top: 55%; left: 5%; transform: scale(1) rotate(-10deg);}
+}
+@keyframes bubble3 {
+    0% {}
+    100% {top: 85%; left: 15%; transform: scale(1) rotate(30deg);}
+}
+@keyframes bubble4 {
+    0% {}
+    100% {top: 55%; left: 85%; transform: scale(0.7) rotate(70deg);}
+}
+@keyframes bubble5 {
+    0% {}
+    100% {top: 0%; left: 45%; transform: scale(1) rotate(170deg);}
+}
+@keyframes bubble6 {
+    0% {}
+    100% {top: 5%; left: 90%; transform: scale(1.5) rotate(70deg);}
+}
+@keyframes bubble7 {
+    0% {}
+    100% {top: -5%; left: 0%; transform: scale(1.5) rotate(170deg);}
+}
+
+
+/* О клинике */
+
+.section_about{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 500px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 50px;
+}
+
+.section_about__image{
+    display: flex;
+    margin-left: auto;
+    height: 100%;
+    width: 50%;
+
+    background-image: url("../media/first_cat.jpg");
+    background-size: cover;
+    background-position: 100%;
+    border-radius: 50px;
+}
+
+.section_about__info{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+}
+
+.section_about__slogan{
+    display: flex;
+    flex-direction: column;
+}
+
+.section_about__title{
+    font-family: 'TT Norms extrabold';
+    font-weight: 900;
+    font-size: 70px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.section_about__text{
+    font-size: 30px;
+    font-family: 'TT Norms medium';
+    font-weight: 500;
+    line-height: 25px;
+    word-wrap: break-word;
+    color: black;
+}
+
+.section_about__facts{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    justify-content: start;
+    align-items: center;
+}
+
+.section_about__fact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    gap: 10px;
+    color: black
+}
+
+.section_about__fact img{
+    width: 5vw;
+    max-width: 100px;
+}
+
+.section_about__fact p{
+    color: black;
+    font-weight: 900;
+    max-width: 1980px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Баннер специалисты */
+
+.banner_specialists{
+    display: flex;
+    background-color: var(--peach-color);
+    height: 600px;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner_specialists__title{
+    display: flex;
+    width: 35%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'TT Norms extrabold';
+    line-height: 50px;
+    word-wrap: break-word;
+    z-index: 3;
+}
+
+.banner_specialists img{
+    position: absolute;
+    transform: scale(0.5);
+    left: -10%;
+    z-index: 2;
+}
+
+.banner_main__bubbles{
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.banner_specialists
+.bubble{
+    position: absolute;
+}
+
+.banner_specialists .b1{top: 80%; left: 70%; transform: scale(1.5) rotate(0deg); animation: bubble1 8s  ease infinite alternate-reverse;}
+.banner_specialists .b2{z-index: 1; top: 50%; left: 3%; transform: scale(1) rotate(0deg); animation: bubble2 8s  ease infinite alternate;}
+.banner_specialists .b3{top: 90%; left: 25%; transform: scale(1) rotate(15deg); animation: bubble3 8s  ease infinite alternate-reverse;}
+.banner_specialists .b4{top: 60%; left: 90%; transform: scale(0.7) rotate(60deg); animation: bubble4 8s  ease infinite alternate;}
+.banner_specialists .b5{top: -5%; left: 50%; transform: scale(1) rotate(180deg); animation: bubble5 8s  ease infinite alternate;}
+.banner_specialists .b6{top: 1%; left: 95%; transform: scale(1.5) rotate(60deg); animation: bubble6 8s  ease infinite alternate;}
+.banner_specialists .b7{top: -10%; left: -3%; transform: scale(1.5) rotate(180deg); animation: bubble7 8s  ease infinite alternate;}
+
+@keyframes bubble1 {
+    0% {}
+    100% {top: 75%; left: 75%; transform: scale(1.5) rotate(10deg);}
+}
+@keyframes bubble2 {
+    0% {}
+    100% {top: 55%; left: 7%; transform: scale(1) rotate(-10deg);}
+}
+@keyframes bubble3 {
+    0% {}
+    100% {top: 85%; left: 20%; transform: scale(1) rotate(30deg);}
+}
+@keyframes bubble4 {
+    0% {}
+    100% {top: 55%; left: 85%; transform: scale(0.7) rotate(70deg);}
+}
+@keyframes bubble5 {
+    0% {}
+    100% {top: 0%; left: 45%; transform: scale(1) rotate(170deg);}
+}
+@keyframes bubble6 {
+    0% {}
+    100% {top: 5%; left: 90%; transform: scale(1.5) rotate(70deg);}
+}
+@keyframes bubble7 {
+    0% {}
+    100% {top: -5%; left: 0%; transform: scale(1.5) rotate(170deg);}
+}
+
+
+/* Раздел специалисты */
+.section_specialists{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px
+}
+
+.section_specialists__title{
+    text-align: center;
+    color: var(--peach-color);
+    font-family: 'TT Norms extrabold';
+    font-size: 70px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.section_specialists__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+}
+
+.section_specialists__doctor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    width: 300px;
+    height: 400px;
+    aspect-ratio: 6/8;
+    padding: 10px;
+
+    background-position: top;
+    background-size: cover;
+    background-clip: inherit;
+    border-radius: 35px;
+    transition: all 0.5s;
+    border: none;
+}
+
+
+.section_specialists__doctor:hover{
+    transform: scale(1.02);
+}
+
+.section_specialists__doctor_info_card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    gap: 10px
+}
+
+.section_specialists__doctor_info{
+    color: black;
+    font-size: 20px;
+    font-family: 'TT Norms regular';
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.section_specialists__doctor .name{
+    font-family: 'TT Norms extrabold';
+}
+
+.section_specialists__doctor_buttons{
+    display: flex;
+    margin-top: auto;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button__booking{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    min-height: 25px;
+    width: 100%;
+
+    background-color: var(--peach-color);
+    border-radius: 1000px;
+    color: white;
+    font-family: 'TT Norms extrabold';
+    font-weight: 800;
+}
+
+.button__about{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    min-height: 25px;
+    aspect-ratio: 1/1;
+
+    background-color: var(--lavender-color);
+    border-radius: 1000px;
+    color: white;
+    font-family: 'TT Norms extrabold';
+    font-weight: 800;
+}
+
+.button_favorite__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    min-height: 25px;
+
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border-radius: 1000px;
+}
+
+.button_favorite__button img{
+    height: 15px;
+    width: 15px;
+}
+
+.button_favorite input{
+    display: none;
+}
+
+.button_favorite input:checked + .button_favorite__button{
+    background-color: var(--secondary-color);
+}
+
+
+.button__services{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--peach-color);
+    width: 150px;
+    min-width: min-content;
+    height: 40px;
+    color: white;
+    font-family: 'TT Norms extrabold';
+    font-size: 1em;
+    border-radius: 1000px;
+}
+
+
+
+/* Баннер рекомендации */
+
+.banner_recomendations{
+    display: flex;
+    background-color: var(--lavender-color);
+    height: 600px;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner_recomendations__title{
+    display: flex;
+    width: 35%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'TT Norms extrabold';
+    line-height: 50px;
+    word-wrap: break-word;
+    z-index: 3;
+}
+
+.banner_recomendations img{
+    position: absolute;
+    transform: scale(0.5);
+    right: -10%;
+    top: -50%;
+    z-index: 2;
+}
+
+.banner_recomendations__bubbles{
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.banner_recomendations
+.bubble{
+    position: absolute;
+}
+
+.banner_recomendations .b1{top: 80%; left: 70%; transform: scale(1.5) rotate(0deg); animation: bubble1 8s  ease infinite alternate-reverse;}
+.banner_recomendations .b2{ top: 50%; left: 3%; transform: scale(1) rotate(0deg); animation: bubble2 8s  ease infinite alternate;}
+.banner_recomendations .b3{top: 90%; left: 25%; transform: scale(1) rotate(15deg); animation: bubble3 8s  ease infinite alternate-reverse;}
+.banner_recomendations .b4{z-index: 1; top: 60%; left: 90%; transform: scale(0.7) rotate(60deg); animation: bubble4 8s  ease infinite alternate;}
+.banner_recomendations .b5{top: -5%; left: 50%; transform: scale(1) rotate(180deg); animation: bubble5 8s  ease infinite alternate;}
+.banner_recomendations .b6{top: 1%; left: 95%; transform: scale(1.5) rotate(60deg); animation: bubble6 8s  ease infinite alternate;}
+.banner_recomendations .b7{top: -10%; left: -3%; transform: scale(1.5) rotate(180deg); animation: bubble7 8s  ease infinite alternate;}
+
+@keyframes bubble1 {
+    0% {}
+    100% {top: 75%; left: 75%; transform: scale(1.5) rotate(10deg);}
+}
+@keyframes bubble2 {
+    0% {}
+    100% {top: 55%; left: 7%; transform: scale(1) rotate(-10deg);}
+}
+@keyframes bubble3 {
+    0% {}
+    100% {top: 85%; left: 20%; transform: scale(1) rotate(30deg);}
+}
+@keyframes bubble4 {
+    0% {}
+    100% {top: 55%; left: 85%; transform: scale(0.7) rotate(70deg);}
+}
+@keyframes bubble5 {
+    0% {}
+    100% {top: 0%; left: 45%; transform: scale(1) rotate(170deg);}
+}
+@keyframes bubble6 {
+    0% {}
+    100% {top: 5%; left: 90%; transform: scale(1.5) rotate(70deg);}
+}
+@keyframes bubble7 {
+    0% {}
+    100% {top: -5%; left: 0%; transform: scale(1.5) rotate(170deg);}
+}
+
+
+
+/* Список рекомендаций */
+
+.recomendations{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.recomendations__title{
+    text-align: center;
+    color: var(--lavender-color);
+    font-family: 'TT Norms extrabold';
+    font-size: 70px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.recomendations__list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.recomendations__tip{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 15px;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+
+.recomendations__tip:hover{
+    transform: scale(1.05);
+}
+
+.tip_text{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size: 25px;
+}
+
+.list_mark{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: var(--lavender-color);
+    border-radius: 1000px;
+}
+
+.tip_title{
+    color: black;
+    font-family: 'TT Norms extrabold';
+    font-weight: 800;
+    word-wrap: break-word
+}
+
+.tip_text{
+    color: black;
+    font-family: 'TT Norms regular';
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+
+.recomendations__info{
+    color: var(--primary-color);
+    font-family: 'TT Norms regular';
+    font-weight: 400;
+    font-size: 25px;
+    word-wrap: break-word
+}
+
+
+
+
+
+
+
+
+/* Для телефона */
+/* Для телефона */
+/* Для телефона */
+/* Для телефона */
+/* Для телефона */
+
+
+
+@media (max-width: 700px){
+
+    /* Главный баннер */
+
+    .banner_main{
+        display: flex;
+        background-color: var(--secondary-color);
+        height: 30vh;
+        min-height: max-content;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner_main__title{
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 1;
+        padding: 10px;
+    }
+
+    .banner_main__title_text{
+        color: white;
+        font-size: 10vw;
+        font-family: 'TT Norms extrabold';
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: normal;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .banner_main__slogan{
+        color: white;
+        font-size: 3vw;
+        font-family: 'TT Norms regular';
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: normal;
+        letter-spacing: 5px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .banner_main__bubbles{
+        display: none;
+    }
+
+    .banner_main
+    .bubble{
+        display: none;
+    }
+
+
+    /* О клинике */
+
+    .section_about{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        max-height: max-content;
+
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        padding: 10px;
+        gap: 5vw;
+    }
+
+    .section_about__image{
+        display: flex;
+        justify-self: center;
+        min-height: 50vw;
+        height: 100%;
+        width: 100%;
+
+        background-image: url("../media/first_cat.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 50px;
+    }
+
+    .section_about__info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 5vw;
+    }
+
+    .section_about__slogan{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_about__title{
+        font-family: 'TT Norms extrabold';
+        font-weight: 900;
+        font-size: 15vw;
+        color: var(--secondary-color);
+        text-transform: uppercase;
+    }
+
+    .section_about__text{
+        font-size: 5vw;
+        font-family: 'TT Norms medium';
+        font-weight: 500;
+        line-height: normal;
+        word-wrap: break-word;
+        color: var(--primary-color);
+    }
+
+    .section_about__facts{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    @media (max-width: 450px) {
+        .section_about__facts{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 0;
+            justify-content: center;
+            align-items: flex-start;
+            align-self: center;
+            gap: 10px;
+            width: 70%;
+        }
+    }
+
+    .section_about__fact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        word-wrap: break-word;
+        gap: 10px;
+    }
+
+    .section_about__fact img{
+        height: auto;
+        width: 15vw;
+        fill: var(--primary-color);
+    }
+
+
+    /* Баннер специалисты */
+
+    .banner_specialists{
+        display: flex;
+        background-color: var(--peach-color);
+        height: 30vh;
+        min-height: max-content;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .banner_specialists__title{
+        display: flex;
+        width: 80%;
+        text-align: center;
+        color: white;
+        font-size: 5vw;
+        font-family: 'TT Norms extrabold';
+        line-height: normal;
+    }
+
+    .banner_specialists img{
+        position: absolute;
+        height: auto;
+        width: 50vw;
+        left: -15%;
+        top: -60%;
+        transform: rotate(180deg) scale(0.5);
+        z-index: 2;
+    }
+
+    .banner_specialists__bubbles{
+        display: none;
+    }
+
+    .banner_specialists
+    .bubble{
+        display: none;
+    }
+
+
+
+    /* Раздел специалисты */
+    .section_specialists{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 50px
+    }
+
+    .section_specialists__title{
+        text-align: center;
+        color: var(--peach-color);
+        font-family: 'TT Norms extrabold';
+        font-size: 10vw;
+        text-transform: uppercase;
+        word-wrap: break-word;
+    }
+
+    .section_specialists__list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .section_specialists__doctor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 50vw;
+        min-width: 300px;
+        min-height: 400px;
+        aspect-ratio: 6/8;
+        padding: 10px;
+
+        background-position: top;
+        background-size: cover;
+        background-clip: inherit;
+        border-radius: 35px;
+        transition: all 0.5s;
+    }
+
+
+    .section_specialists__doctor:hover{
+        transform: unset;
+    }
+
+    .section_specialists__doctor_info_card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: auto;
+        padding: 5px;
+        background-color: white;
+        border-radius: 20px;
+        gap: 10px
+    }
+
+    .section_specialists__doctor_info{
+        color: var(--primary-color);
+        font-size: 20px;
+        font-family: 'TT Norms regular';
+        font-weight: 500;
+        word-wrap: break-word
+    }
+
+    .section_specialists__doctor .name{
+        font-family: 'TT Norms extrabold';
+    }
+
+    .section_specialists__doctor_buttons{
+        display: flex;
+        margin-top: auto;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .button__booking{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        min-height: 25px;
+        width: 100%;
+
+        background-color: var(--peach-color);
+        border-radius: 1000px;
+        color: white;
+        font-family: 'TT Norms extrabold';
+        font-weight: 800;
+    }
+
+    .button__about{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        min-height: 25px;
+        aspect-ratio: 1/1;
+
+        background-color: var(--lavender-color);
+        border-radius: 1000px;
+        color: white;
+        font-family: 'TT Norms extrabold';
+        font-weight: 800;
+    }
+
+    .button_favorite__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1/1;
+        min-height: 25px;
+
+        cursor: pointer;
+        background-color: var(--primary-color);
+        border-radius: 1000px;
+    }
+
+    .button_favorite__button img{
+        height: 15px;
+        width: 15px;
+    }
+
+    .button_favorite input{
+        display: none;
+    }
+
+    .button_favorite input:checked + .button_favorite__button{
+        background-color: var(--secondary-color);
+    }
+
+
+    .button__services{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--peach-color);
+        width: 150px;
+        min-width: min-content;
+        height: 40px;
+        color: white;
+        font-family: 'TT Norms extrabold';
+        font-size: 1em;
+        border-radius: 1000px;
+    }
+
+
+
+    /* Баннер рекомендации */
+
+    .banner_recomendations{
+        display: flex;
+        background-color: var(--lavender-color);
+        height: 30vh;
+        min-height: max-content;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .banner_recomendations__title{
+        display: flex;
+        width: 80%;
+        text-align: center;
+        color: white;
+        font-size: 5vw;
+        font-family: 'TT Norms extrabold';
+        line-height: normal;
+    }
+
+    .banner_recomendations img{
+        position: absolute;
+        transform: scale(0.5);
+        right: -10%;
+        top: -50%;
+        z-index: 2;
+    }
+
+    .banner_recomendations__bubbles{
+        display: none;
+    }
+
+    .banner_recomendations
+    .bubble{
+        display: none;
+    }
+
+
+
+    /* Список рекомендаций */
+
+    .recomendations{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .recomendations__title{
+        text-align: center;
+        color: var(--lavender-color);
+        font-family: 'TT Norms extrabold';
+        font-size: 10vw;
+        text-transform: uppercase;
+        word-wrap: break-word;
+    }
+
+    .recomendations__list{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .recomendations__tip{
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 40px;
+        padding: 15px;
+        gap: 10px;
+        transition: all 0.5s ease;
+    }
+
+    .recomendations__tip:hover{
+        transform: scale(1.05);
+    }
+
+    .tip_text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .list_mark{
+        display: flex;
+        width: 30px;
+        height: 30px;
+        background-color: var(--lavender-color);
+        border-radius: 1000px;
+    }
+
+    .tip_title{
+        color: var(--primary-color);
+        font-family: 'TT Norms extrabold';
+        font-weight: 800;
+        font-size: 5vw;
+        word-wrap: break-word
+    }
+
+    .tip_text{
+        color: var(--primary-color);
+        font-family: 'TT Norms regular';
+        font-weight: 400;
+        font-size: 5vw;
+        word-wrap: break-word
+    }
+
+
+    .recomendations__info{
+        color: var(--primary-color);
+        font-family: 'TT Norms regular';
+        font-weight: 400;
+        font-size: 5vw;
+        text-align: center;
+        word-wrap: break-word
+    }
+
+
+}
+
+@media (min-width: 700px) and (max-width: 1200px){
+    .banner_main .b2, .banner_main .b5, .banner_main .b4{
+        display: none;
+    }
+
+    .section_about{
+        flex-direction: column;
+        gap: 20px;
+        height: max-content;
+    }
+    .section_about__info{
+        width: 100%;
+        gap: 20px
+    }
+    .section_about__slogan{
+        width: 70%;
+    }
+    .section_about__facts{
+        margin-top: 0;
+    }
+    .section_about__image{
+        margin-left: 0;
+        width: 100%;
+        height: 50vh;
+    }
+
+
+    .banner_specialists__title{
+        width: 70%;
+        font-size: 5vw;
+    }
+    .banner_specialists img{
+        left: -300px;
+        top: -40%;
+        transform: scale(0.4);
+    }
+    .banner_specialists .b2, .banner_specialists .b5{
+        display: none;
+    }
+
+
+    .section_specialists__list{
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .banner_recomendations .b5{
+        display: none;
+    }
+    .banner_recomendations__title{
+        width: 60%;
+    }
+    .banner_recomendations img{
+        left: 600px;
+    }
+
+
+    .tip_text{
+        width: 90%;
+    }
+
+
+    footer{
+        padding: 20px;
+    }
+    .subscribe{
+        width: 100%;
+    }
+}

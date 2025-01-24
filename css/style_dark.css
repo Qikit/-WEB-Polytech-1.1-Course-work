@@ -20,8 +20,12 @@
     font-family: "TT Norms extrabold";
     src: url(../fonts/TTNorms-ExtraBold.ttf);
 }
+
+
+
 html{
     scroll-behavior: smooth;
+    color: black;
 }
 
 body{
@@ -31,10 +35,10 @@ body{
 }
 
 :root{
-    --primary-color: #333333;
-    --secondary-color: #EF6D7C;
-    --peach-color: #EF8B6D;
-    --lavender-color: #BB8FE8;
+    --primary-color: white;
+    --secondary-color: black;
+    --peach-color: black;
+    --lavender-color: black;
 }
 
 ::-webkit-scrollbar {
@@ -99,7 +103,7 @@ nav{
 }
 
 .menu__logotype{
-    background-image: url("../UI_Elements/logo.svg");
+    background-image: url("../UI_Elements/logo-dark.svg");
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -108,7 +112,7 @@ nav{
 .menu__title{
     font-family: 'TT Norms extrabold';
     font-size: 18pt;
-    color: var(--primary-color);
+    color: black;
 }
 
 .menu__title--color{
@@ -128,6 +132,7 @@ nav{
     font-family: 'TT Norms medium';
     font-weight: 10;
     transition: color 0.5s;
+    color: black;
 }
 
 .menu__sections a:hover{
@@ -142,10 +147,6 @@ nav{
     background-size: cover;
 }
 
-.menu__sign_up:hover{
-    background-image: url("../UI_Elements/sign_in-pink.svg");
-}
-
 .menu__sign_up--phone{
     display: none;
 }
@@ -156,10 +157,6 @@ nav{
     height: 40px;
     width: 40px;
     background-size: cover;
-}
-
-.dark_theme--phone{
-    display: none;
 }
 
 
@@ -187,6 +184,7 @@ footer{
     padding-right: 150px;
     min-height: 600px;
     color: white;
+    background-color: black;
 }
 
 footer video{
@@ -235,9 +233,9 @@ footer video{
 }
 
 .contacts__contact p{
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: 'TT Norms regular';
-    font-weight: 400;
+    font-weight: 900;
     word-wrap: break-word
 }
 
@@ -414,15 +412,6 @@ footer video{
     }
 
     .menu__sign_up--phone{
-        display: flex;
-    }
-
-    .dark_theme{
-        display: none;
-    }
-    
-
-    .dark_theme--phone{
         display: flex;
     }
 
