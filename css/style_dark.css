@@ -128,7 +128,7 @@ nav{
 
 .menu__sections a{
     color: var(--primary-color);
-    font-size: 14;
+    font-size: 14px;
     font-family: 'TT Norms medium';
     font-weight: 10;
     transition: color 0.5s;
@@ -377,7 +377,7 @@ footer video{
 
     .menu__title{
         font-family: 'TT Norms extrabold';
-        text-transform: scale(0.1);
+        text-transform: uppercase;
         color: black;
     }
 
@@ -399,7 +399,7 @@ footer video{
 
     .menu__sections a{
         color: black;
-        font-size: 14;
+        font-size: 14px;
         font-family: 'TT Norms extrabold';
         font-weight: 10;
         transition: color 0.5s;
